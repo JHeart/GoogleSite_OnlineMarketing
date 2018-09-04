@@ -1,0 +1,125 @@
+<html>
+<head>
+<title>
+</title>
+</head>
+<body>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+
+
+<style type="text/css">
+.center{
+    //margin: auto;
+    //width: 80%;
+    //border: 3px solid #73AD21;
+    text-align: center;
+}
+
+.animated {
+            background-repeat: no-repeat;
+           // background-position: left top;
+            -webkit-animation-duration: 10s;
+            animation-duration: 10s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+         }
+
+ @-webkit-keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+         }
+
+         @keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+         }
+
+         .fadeIn {
+
+
+
+
+            -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+         }
+
+
+.slide-in-up
+{
+    -webkit-animation: slide-in-up 1.5s;
+            animation: slide-in-up 1.5s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+}
+
+@-webkit-keyframes slide-in-up
+{
+    0%
+    {
+        -webkit-transform: translateY(10px);
+    }
+    100%
+    {
+        -webkit-transform: translateY(0px);
+    }
+}
+
+@keyframes slide-in-up
+{
+    0%
+    {
+        transform: translateY(10px);
+    }
+    100%
+    {
+        transform: translateY(0px);
+    }
+}
+
+
+ @media ( max-width: 680px ){//for mobile
+.mobile-head{
+   font-size:20px;
+ }
+
+}
+
+#myVideo {
+  position: fixed;
+   top: 0%;
+   left: 0%;
+   min-width: 100%;
+   min-height: 100%;
+   width: auto;
+   height: auto;
+   z-index: -100;
+    min-width: 100%;
+    min-height: 100%;
+    //opacity: 0.5;
+    -webkit-filter: grayscale(300%);
+   -moz-filter: grayscale(300%);
+   -ms-filter: grayscale(300%);
+   -o-filter: grayscale(300%);
+   filter: grayscale(300%);
+
+}
+
+</style>
+
+
+
+
+<div class="center " style="">
+ <div class="mobile-head animated fadeIn slide-in-up" style="font-size:35px; color:#000000">최적의 온라인마케팅</div>
+ <div class="mobile-head animated fadeIn" style="font-size:35px; color:#000000; animation-delay: 1s; -webkit-animation-delay: 1s; /* Safari 4.0 - 8.0 */">이씨플라자</div>
+ <div class="mobile-head animated fadeIn" style="font-size:35px; color:#000000; animation-delay: 2s; -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */"><i class="fas fa-address-card"></i></div>
+</div>
+
+<video autoplay muted loop id="myVideo">
+    <source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+</body>
+</html>
