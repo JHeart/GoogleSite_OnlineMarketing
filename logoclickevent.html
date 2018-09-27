@@ -1,0 +1,40 @@
+<html>
+<head>
+<style type="text/css">
+div {
+ color: blue;
+}
+p {
+ color: green;
+}
+span {
+ color: red;
+ display: none;
+}
+</style>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+
+<body>
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
+ integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
+  crossorigin="anonymous">
+
+<i class="fas fa-angle-left"></i>
+<i class="fas fa-angle-right"></i>
+<div>Try scrolling the iframe.</div>
+<p>Paragraph - <span>Scroll happened!</span></p>
+
+<script>
+$( "p" ).clone().appendTo( document.body );
+$( "p" ).clone().appendTo( document.body );
+$( "p" ).clone().appendTo( document.body );
+$( window ).scroll(function() {
+$( "span" ).css( "display", "inline" ).fadeOut( "slow" );
+});
+</script>
+</body>
+</html>
