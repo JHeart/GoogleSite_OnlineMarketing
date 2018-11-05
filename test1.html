@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Intro Animation</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <link rel="stylesheet" href="master.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,700,700i,800,800i,900,900i" rel="stylesheet">
+
+		<style type="text/css">
+		1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+html, body {
+	 margin: 0;
+	 padding: 0;
+	 width: 100%;
+	 height: 100%;
+}
+
+body {
+	 cursor: crosshair;
+	 font-family: Poppins;
+	 background: url(hero.jpg) no-repeat 50% 50%;
+}
+
+.content {
+	 width: 60%;
+	 margin: 0 auto;
+	 z-index: -1;
+	 position: absolute;
+	 top: 60%;
+	 left: 10%;
+	 transform: translate(0, -50%);
+}
+
+.content h1 {
+	 font-family: Poppins;
+	 font-size: 54px;
+	 color: #101010;
+	 font-weight: 700;
+	 text-transform: uppercase;
+	 margin-bottom: 10px;
+}
+
+.content p {
+	 margin-top: 0;
+	 text-align: left;
+	 color: #101010;
+	 font-weight: 400;
+}
+
+.overlay-2 {
+	 z-index: 0;
+	 position: absolute;
+	 width: 100%;
+	 height: 100vh;
+	 background: #48A9A6;
+}
+
+.overlay {
+	 z-index: 1;
+	 position: absolute;
+	 width: 100%;
+	 height: 100vh;
+	 background: #101010;
+}
+
+.overlay p {
+	 font-size: 300px;
+	 font-weight: 800;
+}
+
+.screen {
+	 color: #323232;
+	 font-family: Poppins;
+	 position: absolute;
+	 top: 12%;
+	 left: 50%;
+	 transform: translate(-50%, -50%);
+}
+
+.myBtn {
+	 font-family: Poppins;
+	 position: absolute;
+	 top: 50%;
+	 left: 50%;
+	 transform: translate(-50%, -50%);
+}
+
+button {
+	 display: block;
+	 padding: 24px 48px;
+	 font-family: Poppins;
+	 font-weight: 700;
+	 font-size: 12px;
+	 letter-spacing: 6px;
+	 color: #fff;
+	 border: 2px solid #fff;
+	 text-transform: uppercase;
+	 outline: none;
+	 overflow: hidden;
+	 background: none;
+	 z-index: 1;
+	 cursor: crosshair;
+	 transition: 0.8s ease-out;
+}
+
+.myBtn:hover {
+	 color: #101010;
+	 cursor: crosshair;
+}
+
+.myBtn:before {
+	 content: "";
+	 position: absolute;
+	 background: #fff;
+	 bottom: 0;
+	 left: 0;
+	 right: 0;
+	 top: 100%;
+	 z-index: -1;
+	 transition: top 0.8s ease-out;
+}
+
+.myBtn:hover:before {
+	 top: 0;
+}
+		</style>
+
+
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="overlay">
+            <p class="screen">EXPLORE</p>
+            <div class="intro">
+                    <button class="myBtn" onclick="fadeOut()">EXPLORE</button>
+            </div>
+        </div>
+
+        <div class="overlay-2"></div>
+
+        <div class="content">
+            <h1>Landing Page</h1>
+            <p class="data">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi eaque blanditiis culpa, voluptate reprehenderit sapiente quibusdam odio eum beatae autem quaerat tempora et vitae sint, porro assumenda distinctio eos? Nesciunt!</p>
+        </div>
+    </div>
+
+    <script>
+
+     function fadeOut() {
+
+     TweenMax.to(".myBtn", 1, {
+          y: -100,
+          opacity: 0
+     });
+
+     TweenMax.to(".screen", 2, {
+          y: -400,
+          opacity: 0,
+          ease: Power2.easeInOut,
+          delay: 2
+     });
+
+     TweenMax.from(".overlay", 2, {
+          ease: Power2.easeInOut
+     });
+
+     TweenMax.to(".overlay", 2, {
+          delay: 2.6,
+          top: "-110%",
+          ease: Expo.easeInOut
+     });
+
+     TweenMax.to(".overlay-2", 2, {
+          delay: 3,
+          top: "-110%",
+          ease: Expo.easeInOut
+     });
+
+     TweenMax.from(".content", 2, {
+          delay: 3.2,
+          opacity: 0,
+          ease: Power2.easeInOut
+     });
+
+     TweenMax.to(".content", 2, {
+          opacity: 1,
+          y: -300,
+          delay: 3.2,
+          ease: Power2.easeInOut
+     });
+
+     }
+
+    </script>
+</body>
+</html>
