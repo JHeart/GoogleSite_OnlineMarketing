@@ -1,234 +1,225 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
 
-	<title></title> <!-- The title tag shows in email notifications, like Android 4.4. -->
-
-
-
-</head>
-<body>
   <div style="width="100%" bgcolor="#222222" style="Margin: 0;">
 
 
-  <meta charset="utf-8"> <!-- utf-8 works for most cases -->
-	<meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
-
-  <!-- CSS Reset -->
-  <style type="text/css">
-
-  /* What it does: Remove spaces around the email design added by some email clients. */
-  /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
-      html,
-      body {
-        margin: 0 auto !important;
-          padding: 0 !important;
-          height: 100% !important;
-          width: 100% !important;
-      }
-
-      /* What it does: Stops email clients resizing small text. */
-      * {
-          -ms-text-size-adjust: 100%;
-          -webkit-text-size-adjust: 100%;
-      }
-
-      /* What is does: Centers email on Android 4.4 */
-      div[style*="margin: 16px 0"] {
-          margin:0 !important;
-      }
-
-      /* What it does: Stops Outlook from adding extra spacing to tables. */
-      table,
-      td {
-          mso-table-lspace: 0pt !important;
-          mso-table-rspace: 0pt !important;
-      }
-
-      /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
-      table {
-          border-spacing: 0 !important;
-          border-collapse: collapse !important;
-          table-layout: fixed !important;
-          Margin: 0 auto !important;
-      }
-      table table table {
-          table-layout: auto;
-      }
-
-      /* What it does: Uses a better rendering method when resizing images in IE. */
-      img {
-          -ms-interpolation-mode:bicubic;
-      }
-
-      /* What it does: A work-around for iOS meddling in triggered links. */
-      .mobile-link--footer a,
-      a[x-apple-data-detectors] {
-          color:inherit !important;
-          text-decoration: underline !important;
-      }
-
-  </style>
-
-
-    <center style="width: 100%; background: #222222;">
-
-        <!--
-            Set the email width. Defined in two places:
-            1. max-width for all clients except Desktop Windows Outlook, allowing the email to squish on narrow but never go wider than 600px.
-            2. MSO tags for Desktop Windows Outlook enforce a 600px width.
-        -->
-        <div style="max-width: 600px; margin: auto;">
-
-            <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="100%" style="max-width:600px;">
-
-                <tr>
-                    <td bgcolor="#ffffff" align="center" height="100%" valign="top" width="100%" style="padding-bottom: 40px">
-                        <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="max-width:560px;">
-                            <tr>
-                                <td align="center" valign="top" width="50%">
-                                    <table cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
-                                        <tr>
-                                            <td style="text-align: center; padding: 0 10px;">
-                                                <img src="http://placehold.it/200" width="200" alt="" style="border: 0;width: 100%;max-width: 200px;" class="center-on-narrow">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="text-align: center;font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; padding: 10px 10px 0;" class="stack-column-center">
-                                                Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora per conubia nostra, per torquent inceptos&nbsp;himenaeos.
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                                <td align="center" valign="top" width="50%">
-                                    <table cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
-                                        <tr>
-                                            <td style="text-align: center; padding: 0 10px;">
-                                                <img src="http://placehold.it/200" width="200" alt="" style="border: 0;width: 100%;max-width: 200px;" class="center-on-narrow">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="text-align: center;font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; padding: 10px 10px 0;" class="stack-column-center">
-                                                Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora per conubia nostra, per torquent inceptos&nbsp;himenaeos.
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-
-
-
-                        </table>
-                    </td>
-                </tr>
-                <!-- Two Even Columns : END -->
-
-            </table>
-
-        </div>
-
-        <div style="max-width: 600px; margin: auto;">
-
-            <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="100%" style="max-width: 600px;">
-
-                <tr>
-                    <td bgcolor="#ffffff" align="center" height="100%" valign="top" width="100%" style="padding-bottom: 40px">
-                        <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="max-width:560px;">
-                            <tr>
-                                <td align="center" valign="top" width="50%">
-                                    <table cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
-                                        <tr>
-                                            <td style="text-align: center; padding: 0 10px;">
-                                                <img src="http://placehold.it/200" width="200" alt="" style="border: 0;width: 100%;max-width: 200px;" class="center-on-narrow">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="text-align: center;font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; padding: 10px 10px 0;" class="stack-column-center">
-                                                Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora per conubia nostra, per torquent inceptos&nbsp;himenaeos.
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                                <td align="center" valign="top" width="50%">
-                                    <table cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
-                                        <tr>
-                                            <td style="text-align: center; padding: 0 10px;">
-                                                <img src="http://placehold.it/200" width="200" alt="" style="border: 0;width: 100%;max-width: 200px;" class="center-on-narrow">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="text-align: center;font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; padding: 10px 10px 0;" class="stack-column-center">
-                                                Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora per conubia nostra, per torquent inceptos&nbsp;himenaeos.
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-
-
-
-                        </table>
-                    </td>
-                </tr>
-                <!-- Two Even Columns : END -->
-
-            </table>
-
-        </div>
-
-        <div style="max-width: 600px; margin: auto;">
-
-            <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="100%" style="max-width: 600px;">
-
-                <tr>
-                    <td bgcolor="#ffffff" align="center" height="100%" valign="top" width="100%" style="padding-bottom: 40px">
-                        <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="max-width:560px;">
-                            <tr>
-                                <td align="center" valign="top" width="50%">
-                                    <table cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
-                                        <tr>
-                                            <td style="text-align: center; padding: 0 10px;">
-                                                <img src="http://placehold.it/200" width="200" alt="" style="border: 0;width: 100%;max-width: 200px;" class="center-on-narrow">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="text-align: center;font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; padding: 10px 10px 0;" class="stack-column-center">
-                                                Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora per conubia nostra, per torquent inceptos&nbsp;himenaeos.
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                                <td align="center" valign="top" width="50%">
-                                    <table cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
-                                        <tr>
-                                            <td style="text-align: center; padding: 0 10px;">
-                                                <img src="http://placehold.it/200" width="200" alt="" style="border: 0;width: 100%;max-width: 200px;" class="center-on-narrow">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="text-align: center;font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; padding: 10px 10px 0;" class="stack-column-center">
-                                                Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora per conubia nostra, per torquent inceptos&nbsp;himenaeos.
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-
-
-
-                        </table>
-                    </td>
-                </tr>
-                <!-- Two Even Columns : END -->
-
-            </table>
-
-        </div>
-
-    </center>
-</div>
-
-
-</body>
-</html>
+    <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+      <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+  
+    <!-- CSS Reset -->
+    <style type="text/css">
+  
+  
+  
+        html,
+        body {
+          margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+        }
+  
+        /* What it does: Stops email clients resizing small text. */
+        * {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+  
+        /* What is does: Centers email on Android 4.4 */
+        div[style*="margin: 16px 0"] {
+            margin:0 !important;
+        }
+  
+        /* What it does: Stops Outlook from adding extra spacing to tables. */
+        table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+  
+        /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+        table {
+            border-spacing: 0 !important;
+            border-collapse: collapse !important;
+            table-layout: fixed !important;
+            Margin: 0 auto !important;
+        }
+        table table table {
+            table-layout: auto;
+        }
+  
+        /* What it does: Uses a better rendering method when resizing images in IE. */
+        img {
+            -ms-interpolation-mode:bicubic;
+        }
+  
+        /* What it does: A work-around for iOS meddling in triggered links. */
+        .mobile-link--footer a,
+        a[x-apple-data-detectors] {
+            color:inherit !important;
+            text-decoration: underline !important;
+        }
+  
+    </style>
+  
+  
+      <center style="width: 100%; background: #ffffff;">
+  
+          <!--
+              Set the email width. Defined in two places:
+              1. max-width for all clients except Desktop Windows Outlook, allowing the email to squish on narrow but never go wider than 600px.
+              2. MSO tags for Desktop Windows Outlook enforce a 600px width.
+          -->
+          <div style="margin:auto;">
+                      <!-- max-width: 600px; -->
+  
+              <table border="0" cellspacing="0" cellpadding="10" border="0" align="center" bgcolor="#ffffff" width="100%">
+                              <!-- style="max-width:600px;" -->
+  
+                  <tr>
+                      <td bgcolor="#ffffff" align="center" height="100%" valign="top" width="100%" style="padding-bottom: 40px">
+                          <table border="0" cellpadding="10" cellspacing="0" align="center" width="100%">
+                                                       <!-- style="max-width:560px;" -->
+                              <tr>
+                                  <td align="center" valign="top" width="50%">
+                                      <table cellspacing="0" cellpadding="10" border="0" width="100%" style="font-size: 14px;text-align: left;">
+                                          <tr>
+                                              <td style="text-align: center; padding: 0 10px;">
+                                                  <img src="http://placehold.it/300" width="300" alt="" style="border: 0;width: 100%;max-width: 300px; max-height:300px" class="center-on-narrow">
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td style="text-align: center;font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; padding: 10px 10px 0;" class="stack-column-center">
+                                                  Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora per conubia nostra, per torquent inceptos&nbsp;himenaeos.
+                                              </td>
+                                          </tr>
+                                      </table>
+                                  </td>
+  
+                                  <td align="center" valign="top" width="50%">
+                                      <table cellspacing="0" cellpadding="10" border="0" width="100%" style="font-size: 14px;text-align: left;">
+                                              <tr>
+                                                                                          <td style="text-align: center; padding: 0 10px;">
+                                                                                                  <img src="http://placehold.it/300" width="300" alt="" style="border: 0;width: 100%;max-width: 300px; max-height:300px" class="center-on-narrow">
+                                                                                          </td>
+                                              </tr>
+                                          <tr>
+                                              <td style="text-align: center;font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; padding: 10px 10px 0;" class="stack-column-center">
+                                                  Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora per conubia nostra, per torquent inceptos&nbsp;himenaeos.
+                                              </td>
+                                          </tr>
+                                      </table>
+                                  </td>
+                              </tr>
+                          </table>
+  
+  
+                  <!-- Two Even Columns : END -->
+  
+  
+  
+          </div>
+  
+                  <div style="margin: auto;">
+                      <!-- max-width: 600px; -->
+  
+                          <table border="0" cellspacing="0" cellpadding="10" border="0" align="center" bgcolor="#ffffff" width="100%">
+                              <!-- style="max-width:600px;" -->
+  
+                                  <tr>
+                                          <td bgcolor="#ffffff" align="center" height="100%" valign="top" width="100%" style="padding-bottom: 40px">
+                                                  <table border="0" cellpadding="10" cellspacing="0" align="center" width="100%">
+                                                       <!-- style="max-width:560px;" -->
+                                                          <tr>
+                                                                  <td align="center" valign="top" width="50%">
+                                                                          <table cellspacing="0" cellpadding="10" border="0" width="100%" style="font-size: 14px;text-align: left;">
+                                                                                  <tr>
+                                                                                          <td style="text-align: center; padding: 0 10px;">
+                                                                                                  <img src="http://placehold.it/300" width="300" alt="" style="border: 0;width: 100%;max-width: 300px; max-height:300px" class="center-on-narrow">
+                                                                                          </td>
+                                                                                  </tr>
+                                                                                  <tr>
+                                                                                          <td style="text-align: center;font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; padding: 10px 10px 0;" class="stack-column-center">
+                                                                                                  Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora per conubia nostra, per torquent inceptos&nbsp;himenaeos.
+                                                                                          </td>
+                                                                                  </tr>
+                                                                          </table>
+                                                                  </td>
+  
+                                                                  <td align="center" valign="top" width="50%">
+                                                                          <table cellspacing="0" cellpadding="10" border="0" width="100%" style="font-size: 14px;text-align: left;">
+                                                                                      <tr>
+                                                                                          <td style="text-align: center; padding: 0 10px;">
+                                                                                                  <img src="http://placehold.it/300" width="300" alt="" style="border: 0;width: 100%;max-width: 300px; max-height:300px" class="center-on-narrow">
+                                                                                          </td>
+                                                                                      </tr>
+                                                                                  <tr>
+                                                                                          <td style="text-align: center;font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; padding: 10px 10px 0;" class="stack-column-center">
+                                                                                                  Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora per conubia nostra, per torquent inceptos&nbsp;himenaeos.
+                                                                                          </td>
+                                                                                  </tr>
+                                                                          </table>
+                                                                  </td>
+                                                          </tr>
+                                                  </table>
+  
+  
+                                  <!-- Two Even Columns : END -->
+  
+  
+  
+                  </div>
+  
+                  <div style="margin: auto;">
+                      <!-- max-width: 600px; -->
+  
+              <table border="0" cellspacing="0" cellpadding="10" border="0" align="center" bgcolor="#ffffff" width="100%">
+                              <!-- style="max-width:600px;" -->
+  
+                  <tr>
+                      <td bgcolor="#ffffff" align="center" height="100%" valign="top" width="100%" style="padding-bottom: 40px">
+                          <table border="0" cellpadding="10" cellspacing="0" align="center" width="100%">
+                                                       <!-- style="max-width:560px;" -->
+                              <tr>
+                                  <td align="center" valign="top" width="50%">
+                                      <table cellspacing="0" cellpadding="10" border="0" width="100%" style="font-size: 14px;text-align: left;">
+                                          <tr>
+                                              <td style="text-align: center; padding: 0 10px;">
+                                                  <img src="http://placehold.it/300" width="300" alt="" style="border: 0;width: 100%;max-width: 300px; max-height:300px" class="center-on-narrow">
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td style="text-align: center;font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; padding: 10px 10px 0;" class="stack-column-center">
+                                                  Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora per conubia nostra, per torquent inceptos&nbsp;himenaeos.
+                                              </td>
+                                          </tr>
+                                      </table>
+                                  </td>
+  
+                                  <td align="center" valign="top" width="50%">
+                                      <table cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
+                                              <tr>
+                                                                                          <td style="text-align: center; padding: 0 10px;">
+                                                                                                  <img src="http://placehold.it/300" width="300" alt="" style="border: 0;width: 100%;max-width: 300px; max-height:300px" class="center-on-narrow">
+                                                                                          </td>
+                                              </tr>
+                                          <tr>
+                                              <td style="text-align: center;font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; padding: 10px 10px 0;" class="stack-column-center">
+                                                  Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora per conubia nostra, per torquent inceptos&nbsp;himenaeos.
+                                              </td>
+                                          </tr>
+                                      </table>
+                                  </td>
+                              </tr>
+                          </table>
+  
+  
+                  <!-- Two Even Columns : END -->
+  
+  
+  
+          </div>
+  
+      </center>
+  </div>
+  
